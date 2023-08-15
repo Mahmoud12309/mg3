@@ -1,0 +1,317 @@
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Dancing Script', cursive; 
+font-family: 'Kalam', cursive;*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color:#000;
+}
+.padding{
+    padding: 8rem 33px ;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 17px 33px;
+    background-color: #f4fbfb99;
+    backdrop-filter: blur(0.8rem);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    font-size: 20px;
+    color: #17d7ab;
+}
+header .logo h2{
+    color: inherit;
+}
+header .logo span{
+    color: #00000075;
+    font-weight: 200;
+}
+header nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+header ul li a{
+    position: relative;
+    color: #0000008c;
+    transition: .3s;
+}
+header ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: black;
+    top: 50%;
+    z-index: -1;
+    left: 0;
+    transition: .5s;
+}
+header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: black;
+    top: 50%;
+    z-index: -1;
+    right: 0;
+    transition: .5s;
+}
+
+header ul li a:hover{
+    color:#000;
+}
+header ul li a:hover::before,
+header ul li a:hover::after{
+width: 50%;
+}
+ .loga{
+    background: #aaf1f58a;
+    padding: 10px;
+    border-radius: 22px;
+}
+.landing {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(../img/h3.jpg);
+    background-position: center;
+     background-size: 100%;
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 33px;
+}
+.landing .text {
+    width: 35%;
+    height: 44%;
+}
+.landing .text h3 {
+    padding: 10px;
+    background: #b6b9b9;
+    width: 73px;
+    text-align: center;
+    border-radius: 4px;
+    color: #041c12;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.landing .text h2 {
+    text-align: center;
+    color: #2a957c;
+    letter-spacing: 1px;
+    background: #f8fcfc;
+    width: 137px;
+    /* padding: 3px; */
+    margin: 10px 0;
+}
+.text-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-left h4{
+    background: #23b996;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: aliceblue;
+}
+.text-left h2 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-shadow: 5px -4px #0000007a;
+}
+.text-left p {
+    width: 70%;
+    line-height: 2;
+    color: #ffffff6b;
+    letter-spacing: 0.7px;
+    margin: 10px 0;
+    text-shadow: -1px 1px black;
+    font-size: 21px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: auto;
+}
+.str-star{
+    padding: 10px;
+    background: #35c19a;
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 10%);
+}
+.sec-2{
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+}
+.sec-2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-2 .container .card {
+    position: relative;
+    width: 244px;
+    height: 409px;
+    background: #fff;
+    margin: 0 20px;
+    cursor: default;
+}
+.sec-2 .container .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #b4dde1;
+    bottom: 0;
+    clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+    transition: .3s;
+}
+.sec-2 .container .card:hover::before{
+    height: 100%;
+clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); 
+}
+.sec-2 .container .card i {
+    z-index: 100;
+    position: relative;
+    font-size: 45px;
+    text-align: center;
+    width: 100%;
+    color: #17d7ab;
+    margin: 19px 0 0px 0px;
+    height: 21%;
+}
+.sec-2 .container .card .text {
+    position: relative;
+    z-index: 100;
+    height: 74.4%;
+    text-align: center;
+}
+.sec-2 .container .card .text h4 {
+    font-size: 20px;
+    color: #11a180;
+    margin: 3px 0;
+}
+.sec-2 .container .card .text p {
+    font-size: 15px;
+    line-height: 1.9;
+    font-weight: 400;
+    color: #053834;
+}
+.sec-2 .container .card img{
+    width: 80%;
+}
+.orders {
+    width: 100%;
+    height: auto;
+    background: #eee;
+}
+.orders .hedor {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orders .hedor .h {
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+.orders .hedor .h.active{
+    background: #1699b1c2;
+}
+.orders .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.orders .container .card {
+    width: 330px;
+    background: #fff;
+    margin: 10px;
+    overflow: hidden;
+    transition: .3s;
+}
+.orders .container .card .h-hed {
+    padding: 19px 23px;
+    transition: .3s;
+}
+.orders .container .card .h-hed span{
+    background: red;
+    padding: 5px;
+    color: #fff;
+}
+.orders .container .card img{
+width: 100%;
+}
+.orders .container .card .text{
+padding: 10px;
+}
+.orders .container .card .text .head-text-o {
+    margin: 10px 0;
+}
+.orders .container .card .text .head-text-o span {
+    color: #444;
+}
+.orders .container .card .text .head-text-o i {
+    color: #f9af29;
+}
+.orders .container .card .text h3{
+margin: 10px 0;
+}
+.orders .container .card .text .pric p {
+    color: #000000d1;
+}
+.orders .container .card .text .pric p .offer {
+    color: #777;
+}
+.orders .container .card .text .pric p span {
+    color: #17d7ab;
+}
+.orders .container .order-btn {
+    direction: rtl;
+    padding: 0 10px 10px 0;
+    transition: .3s;
+}
+.orders .container .order-btn a {
+    background: #49adbf;
+    padding: 5px 16px;
+    color: #fff;
+}
+/* KEY Frams animation*/
+/* KEY Frams animation*/
