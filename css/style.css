@@ -14,7 +14,7 @@ font-family: 'Kalam', cursive;*/
 .padding{
     padding: 8rem 33px ;
 }
-/* ::-webkit-scrollbar{
+ ::-webkit-scrollbar{
 	width:0px;
 }
 ::-webkit-scrollbar-track{
@@ -22,7 +22,7 @@ font-family: 'Kalam', cursive;*/
 }
 ::-webkit-scrollbar-thumb{
 	background:#ffffff00;
-} */
+}
 header {
     width: 100%;
     position: fixed;
