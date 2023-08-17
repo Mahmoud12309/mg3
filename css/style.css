@@ -14,6 +14,15 @@ font-family: 'Kalam', cursive;*/
 .padding{
     padding: 8rem 33px ;
 }
+/* ::-webkit-scrollbar{
+	width:0px;
+}
+::-webkit-scrollbar-track{
+	background:transparent;
+}
+::-webkit-scrollbar-thumb{
+	background:#ffffff00;
+} */
 header {
     width: 100%;
     position: fixed;
@@ -234,6 +243,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     width: 80%;
 }
 .orders {
+    position: relative;
     width: 100%;
     height: auto;
     background: #eee;
@@ -254,6 +264,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     background: #1699b1c2;
 }
 .orders .container {
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -312,6 +323,147 @@ margin: 10px 0;
     background: #49adbf;
     padding: 5px 16px;
     color: #fff;
+}
+.container{
+	width:100%;
+	height:100vh;
+    display:flex;
+	flex-wrap:wrap;
+}
+.container .form {
+    background: linear-gradient(#00bfa6, #2f2e41);
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    direction: rtl;
+}
+.container .form input{
+	position:relative;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    width: 85%;
+    margin: 9px;
+    background: #ffffffde;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    color: #5c5151d6;
+    font-size: 19px;
+}
+.container .form input::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:red;
+    z-index: 1;
+    left: 0;
+    transition: 0.3s;
+}
+.container .form .btn{
+	text-align:center;
+}
+.container .form .button {
+    position: relative;
+    width: 236px;
+    height: 61px;
+    padding: 10px 20px;
+    color: #777;
+    font-size: 20px;
+    outline: none;
+    border: 0;
+    border-radius: 53px;
+    cursor: pointer;
+	transition:0.3s;
+}
+.container .form .button.active .s {
+	display:block;
+	opacity:1;
+}
+.container .form .button .s {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid #00bfa6;
+    border-bottom: 3.7px solid #2f2e41;
+    animation: C 1s infinite linear;
+	display:none;
+	opacity:0;
+	transition:0.3s;
+}
+@keyframes C{
+	10%{
+		transform:translate(-50%, -50%) rotate(0deg);
+	}
+	100%{
+		transform:translate(-50%, -50%) rotate(360deg);
+	}
+}
+.container  .background {
+    width: 42%;
+    height: 100%;
+    background: url(../img/img1.png);
+    background-position: center;
+    background-size: 126%;
+    background-repeat: no-repeat;
+}
+.contant {
+    position: fixed;
+    right: -340px;
+    top: 93px;
+    background: #00bfa6;
+    width: 295px;
+    height: 50px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    transition: 0.5s;
+    opacity: 0;
+    border-top-right-radius: 20px;
+}
+.contant.active{	
+    opacity: 1;
+    right: 0;
+}
+.contant p {
+    margin: 6px 0 0 16px;
+    font-size: 17px;
+}
+.contant .sh {
+    height: 7px;
+    width: 100%;
+    background: #7777774d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.contant .sh span {
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #cacacad4;
+    display: block;
+}
+.contant .X{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+	text-align:center;
+    background: red;
+    border: 3.5px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
 }
 /* KEY Frams animation*/
 /* KEY Frams animation*/
